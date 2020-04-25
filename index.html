@@ -7,6 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <button>Change Color</button>
 </body>
+
+<script>
+    let color = ["rgb(205, 132, 241)","#ffcccc", "#ffaf40", "#18dcff" , "#67e6dc", "#485460" ,"#d2dae2" ,"#3c40c6","#ef5777","#ffda79", "#2c2c54", "#f7f1e3", "#b33939","#eccc68","#7bed9f", "#2ed573","#57606f","#ff7f50"];
+    let i = 0;
+
+    document.querySelector("button").addEventListener("click",function(){
+        i = i < color.length ?  ++i : 0;
+        document.querySelector("body").style.background = color[i];
+        
+
+    })
+
+
+</script>
 </html>
